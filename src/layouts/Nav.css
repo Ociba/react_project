@@ -1,0 +1,11 @@
+.link {
+    color: tomato;
+    margin-right: 0px;
+    justify-content: end;
+    text-decoration: none;
+    padding:3px;
+  }
+  .link:hover {
+     color: #00F;
+  }
+  
