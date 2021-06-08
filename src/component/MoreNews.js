@@ -1,9 +1,10 @@
 import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import Image from './news2.jpg';
+import Footer from './Footer';
 
 function MoreNews() {
-    return <div style={{textAlign:'center'}}>MoreNews
+    return <div style={{textAlign:'center',marginTop:'60px'}}>MoreNews
        <h2>Detailed News</h2>
        <Container>
            <Row xs="12" md="12" sm="12" lg="12">
@@ -20,6 +21,7 @@ function MoreNews() {
                </Col>
            </Row>
        </Container>
+       <Footer />
     </div>
     ;
 }

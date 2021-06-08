@@ -1,9 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import backgroundIm from './images.jpeg';
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container, Row, Col, Button} from 'react-bootstrap';
+import {Switch, Route, Link} from 'react-router-dom';
+import BookNow from './BookNow';
 import Image from './home.gif';
-import image from './james.jpg';
+import House1 from './apart.jpeg';
+import Footer from './Footer';
+//import image from './james.jpg';
+import Carousels from './Carousel';
+import MoreDetails from './MoreDetails';
 
 const TopContainer = styled.div`
 background-image : url(${backgroundIm});
@@ -13,62 +19,74 @@ padding:0;
 background-size:cover;
 object-fit: cover;
 opacity: 0.4;
+
 `
 function Home() {
-    return <div> 
-        <TopContainer>
-            <h1 style={{textAlign:'center'}}>Home</h1>
-            <p style={{textAlign:'center'}}><img
-                alt=""
-                src={image}
-                width="60"
-                height="60"
-                className="image"
-                />
-            </p>
+    return <div className="bg-light"> 
+        <TopContainer style={{marginTop:'50px'}}>
+            <Carousels />
             </TopContainer>
-       <h1>Welcome to Home</h1>
-       <Container>
+       <Container className="bg-section cards">
            <Row xs="12" sm="12" md="12" lg="12">
-               <Col>
-                    <div class="card text-white bg-success mb-3">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Success card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <Col xs="12" sm="8" md="6" lg="3">
+                    <div class="card text-white mb-3">
+                    <div class="card-body text-center">
+                    <h5 class="card-title"><img  src={House1} style={{width:'230px'}}  alt="Second slide"/></h5>
+                    <p class="badge bg-danger text-right">For Sale</p>
+                        <p class="card-text text-primary">2 Block Apartments For Sale In Kisaasi on 38 Decimals Ready Privete Mailo Land Title Selling 2.8billions</p>
+                        <p class="text-secondary mr-2"><Link to={"/more"}> <Button className="btn bg-warning">view Details</Button></Link>
+                             <Switch><Route exact path="/more" component={MoreDetails} /></Switch>
+                            <Link to={"/bookNow"}>  <Button class="bg-primary">Book Now</Button></Link>
+                            <Switch><Route exact path="/bookNow" component={BookNow} /></Switch>
+                        </p>
                     </div>
                     </div>
                 </Col>
-                <Col>
-                    <div class="card text-white bg-primary mb-3">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Success card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <Col xs="12" sm="8" md="6" lg="3">
+                    <div class="card text-white mb-3">
+                    <div class="card-body text-center">
+                    <h5 class="card-title"><img  src={House1}  style={{width:'230px'}} alt="Second slide"/></h5>
+                    <p class="badge bg-danger text-right">For Sale</p>
+                        <p class="card-text text-primary">2 Block Apartments For Sale In Kisaasi on 38 Decimals Ready Privete Mailo Land Title Selling 2.8billions</p>
+                        <p class="text-secondary mr-2"><Link to={"/more"}> <Button className="btn bg-warning">view Details</Button></Link>
+                             <Switch><Route exact path="/more" component={MoreDetails} /></Switch>
+                            <Link to={"/bookNow"}>  <Button class="bg-primary">Book Now</Button></Link>
+                            <Switch><Route exact path="/bookNow" component={BookNow} /></Switch>
+                        </p>
                     </div>
                     </div>
                 </Col>
-                <Col>
-                    <div class="card text-white bg-warning mb-3">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Success card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <Col xs="12" sm="8" md="6" lg="3">
+                    <div class="card text-white mb-3">
+                    <div class="card-body text-center">
+                    <h5 class="card-title"><img  src={House1} style={{width:'230px'}}  alt="Second slide"/></h5>
+                    <p class="badge bg-danger text-right">For Sale</p>
+                        <p class="card-text text-primary">2 Block Apartments For Sale In Kisaasi on 38 Decimals Ready Privete Mailo Land Title Selling 2.8billions</p>
+                        <p class="text-secondary mr-2"><Link to={"/more"}> <Button className="btn bg-warning">view Details</Button></Link>
+                             <Switch><Route exact path="/more" component={MoreDetails} /></Switch>
+                            <Link to={"/bookNow"}>  <Button class="bg-primary">Book Now</Button></Link>
+                            <Switch><Route exact path="/bookNow" component={BookNow} /></Switch>
+                        </p>
                     </div>
                     </div>
                 </Col>
-                <Col>
-                    <div class="card text-white bg-danger mb-3">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Success card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <Col xs="12" sm="8" md="6" lg="3">
+                    <div class="card text-white mb-3">
+                    <div class="card-body text-center">
+                    <h5 class="card-title"><img  src={House1} style={{width:'230px'}}  alt="Second slide"/></h5>
+                    <p class="badge bg-danger text-right">For Sale</p>
+                        <p class="card-text text-primary">2 Block Apartments For Sale In Kisaasi on 38 Decimals Ready Privete Mailo Land Title Selling 2.8billions</p>
+                        <p class="text-secondary mr-2"><Link to={"/more"}> <Button className="btn bg-warning">view Details</Button></Link>
+                             <Switch><Route exact path="/more" component={MoreDetails} /></Switch>
+                            <Link to={"/bookNow"}>  <Button class="bg-primary">Book Now</Button></Link>
+                            <Switch><Route exact path="/bookNow" component={BookNow} /></Switch>
+                        </p>
                     </div>
                     </div>
                 </Col>
            </Row>
        </Container>
-       <Container>
+       <Container className="bg2-section">
            <Row xs="12" sm="12" md="12" lg="12">
                <h1 style={{color:'black',textAlign:'center'}}>Learning React is Very Interesting</h1>
                <Col>
@@ -78,7 +96,7 @@ function Home() {
                 </Col>
            </Row>
        </Container>
-       <Container>
+       <Container className="bg-section">
            <Row xs="12" sm="12" md="12" lg="12">
            <h1 style={{color:'black',textAlign:'center'}}>Current Programming Rate</h1>
                <Col>
@@ -89,11 +107,12 @@ function Home() {
                 <div>
                 When starting a React project, a simple HTML page with script tags might still be the best option. It only takes a minute to set up!
 
-As your application grows, you might want to consider a more integrated setup. There are several JavaScript toolchains we recommend for larger applications. Each of them can work with little to no configuration and lets you take full advantage of the rich React ecosystem. Learn how.
+                As your application grows, you might want to consider a more integrated setup. There are several JavaScript toolchains we recommend for larger applications. Each of them can work with little to no configuration and lets you take full advantage of the rich React ecosystem. Learn how.
             </div>
                 </Col>
            </Row>
        </Container>
+      <Footer />
     </div>
     ;
 }

@@ -3,10 +3,11 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { BrowserRouter as Route,Switch,Link} from 'react-router-dom';
 import Card from "react-bootstrap/Card";
 import MoreNews from './MoreNews';
+import Footer from './Footer';
 function News() {
-    return <div style={{textAlign:'center'}}>
-             News
-             <h2>Welcome to News Page</h2>
+    return <div> <h3 style={{textAlign:'center',marginTop:'60px'}}>
+             News</h3>
+             <h2  style={{textAlign:'center'}}>Welcome to News Page</h2>
              <Container>
                 <Row xs="12" sm="12" md="12" lg="12">
                     <Col>
@@ -71,7 +72,7 @@ function News() {
                     </Col>
                 </Row>
             </Container>
-
+           <Footer />
     </div>;
 }
  

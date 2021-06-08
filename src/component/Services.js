@@ -6,8 +6,9 @@ import {Container, Row} from 'react-bootstrap';
 import Forms from './Forms';
 import EditStudent from './EditStudent';
 import '../App.css';
+import Footer from './Footer';
 function Services() {
-    return <div> <h3 style={{textAlign:'center'}}>Services</h3>
+    return <div> <h3 style={{textAlign:'center',marginTop:'60px'}}>Services</h3>
        <h2 style={{textAlign:'center'}}>Welcome to Contact us Page</h2>
        <Container>
            <Row sm="12" xs="12" md="12" lg="12">
@@ -120,6 +121,7 @@ function Services() {
       </>
       </Row>
       </Container>
+      <Footer />
     </div>
     ;
 }

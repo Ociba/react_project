@@ -1,12 +1,28 @@
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
 .App {
   text-align: center;
 }
-
+.body {
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  margin-top: 60px;
+  font-family: 'Open Sans', sans-serif; 
+  -webkit-font-smoothing: antialiased; 
+  font-size:16px; 
+  color:#626262; 
+  letter-spacing: 0.02em; 
+  background:#f1f2f3;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+.container {
+  max-width:100%;
+}
+ 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -83,4 +99,38 @@ h1 {
 }
 .image {
   border-radius: 50%;
+}
+.link{
+  padding:0;
+  text-decoration: none;
+  color:lightgray;
+}
+.margin-bottom {
+  margin-bottom: 50%;
+}
+.carousel{
+  color:#000062;
+}
+.dropdowns {
+  color:black;
+  text-decoration: none;
+  text-align: center;
+}
+p span {
+  text-decoration: none;
+}
+p Link {
+  text-decoration: none;
+}
+.bg-section {
+  background: #fff;
+  margin-top: 20px;
+  width: 100%;
+  padding: 20px;
+}
+.cards {
+  margin-top: 80px;
+}
+.bg2-section {
+  padding: 20px;
 }

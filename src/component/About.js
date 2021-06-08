@@ -2,9 +2,10 @@ import React from 'react';
 import image from './james.jpg'; 
 import '../App.css';
 import {Container, Row} from 'react-bootstrap';
+import Footer from './Footer';
 function About() {
     return <div >
-            <h3 style={{textAlign:'center'}}>About</h3>
+            <h3 style={{textAlign:'center',marginTop:'60px'}}>About</h3>
              <h2 style={{textAlign:'center'}}>Welcome to About Page</h2>
              <p style={{textAlign:'center'}}><img
                 alt=""
@@ -37,6 +38,7 @@ function About() {
              </p>
              </Row>
             </Container>
+            <Footer />
     </div>;
 }
  

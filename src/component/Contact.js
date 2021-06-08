@@ -1,9 +1,11 @@
 import React from 'react';
 import {Container, Row} from 'react-bootstrap';
+import Footer from './Footer';
 
 function Contact() {
-    return <div><h1 style={{textAlign:'center'}}>Contact US</h1>
+    return <div><h1 style={{textAlign:'center',marginTop:'60px'}}>Contact US</h1>
        <h2 style={{textAlign:'center'}}>Welcome to Contact us Page</h2>
+       <div style={{textAlign:'left'}}>
        <Container>
            <Row xs="12" sm="12" md="12" lg="12">
               
@@ -44,6 +46,8 @@ function Contact() {
             </form>
            </Row>
        </Container>
+       </div>
+       <Footer />
     </div>
     ;
 }
