@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import backgroundIm from './images.jpeg';
-import {Container, Row, Col, Button} from 'react-bootstrap';
+import {Row, Col, Button} from 'react-bootstrap';
 import {Switch, Route, Link} from 'react-router-dom';
 import BookNow from './BookNow';
 import Image from './home.gif';
 import House1 from './apart.jpeg';
 import Footer from './Footer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee ,faHome, faUser,faEnvelope} from '@fortawesome/free-solid-svg-icons';
 //import image from './james.jpg';
 import Carousels from './Carousel';
 import MoreDetails from './MoreDetails';
@@ -22,12 +24,11 @@ opacity: 0.4;
 
 `
 function Home() {
-    return <div className="bg-light"> 
-        <TopContainer style={{marginTop:'50px'}}>
+    return <div className="body"> 
+        <TopContainer>
             <Carousels />
-            </TopContainer>
-       <Container className="bg-section cards">
-           <Row xs="12" sm="12" md="12" lg="12">
+        </TopContainer>
+           <Row xs="12" sm="12" md="12" lg="12" className="bg-section cards">
                <Col xs="12" sm="8" md="6" lg="3">
                     <div class="card text-white mb-3">
                     <div class="card-body text-center">
@@ -85,20 +86,63 @@ function Home() {
                     </div>
                 </Col>
            </Row>
-       </Container>
-       <Container className="bg2-section">
-           <Row xs="12" sm="12" md="12" lg="12">
-               <h1 style={{color:'black',textAlign:'center'}}>Learning React is Very Interesting</h1>
+           <Row xs="12" sm="12" md="12" lg="12" className="bg2-section">
+               <h3 style={{color:'black',textAlign:'center'}}>Learning React is Very Interesting</h3>
                <Col>
                React has been designed from the start for gradual adoption, and you can use as little or as much React as you need. Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.
 
 
                 </Col>
            </Row>
-       </Container>
-       <Container className="bg-section">
-           <Row xs="12" sm="12" md="12" lg="12">
-           <h1 style={{color:'black',textAlign:'center'}}>Current Programming Rate</h1>
+           <Row xs="12" sm="12" md="12" lg="12" className="bg-section">
+           <h3 style={{color:'black',textAlign:'center'}}>Current Programming Rate</h3>
+               <Col>
+               <div class="about-steps-group white-bg">
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-lg-3">
+                    <div class="about-step">
+                    <div class="about-step-img">
+                    <FontAwesomeIcon icon={faCoffee} />
+                    </div>
+                    <h4 >400+</h4>
+                    <p>People have joined the Gambo team in the past six months</p>
+                    </div>
+                    </div>
+                    <div class="col-lg-3">
+                    <div class="about-step">
+                    <div class="about-step-img">
+                    <FontAwesomeIcon icon={faHome} />
+                    </div>
+                    <h4>2x</h4>
+                    <p>Rate of growth in our monthly user base</p>
+                    </div>
+                    </div>
+                    <div class="col-lg-3">
+                    <div class="about-step">
+                    <div class="about-step-img">
+                    <FontAwesomeIcon icon={faUser} />
+                    </div>
+                    <h4>10 days</h4>
+                    <p>Time taken to launch in 8 cities across India</p>
+                    </div>
+                    </div>
+                    <div class="col-lg-3">
+                    <div class="about-step">
+                    <div class="about-step-img">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                    </div>
+                    <h4>95k</h4>
+                    <p>App downloads on iOS and Android</p>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                </Col>
+           </Row>
+           <Row xs="12" sm="12" md="12" lg="12" className="bg2-section">
+           <h3 style={{color:'black',textAlign:'center'}}>Current Programming Rate</h3>
                <Col>
                     <img  alt="" src={Image}  className="news-image"/>
                 </Col>
@@ -111,7 +155,94 @@ function Home() {
             </div>
                 </Col>
            </Row>
-       </Container>
+           <Row xs="12" sm="12" md="12" lg="12">
+               <Col>
+               <div class="main-banner-slider">
+               <div class="owl-carousel offers-banner owl-theme">
+                                <div class="item">
+                                    <div class="offer-item">
+                                        <div class="offer-item-img">
+                                            <div class="gambo-overlay"></div>
+                                            <img  src={House1} style={{width:'230px'}}  alt="Second slide"/>
+                                        </div>
+                                        <div class="offer-text-dt">
+                                            <div class="offer-top-text-banner">
+                                                <p>6% Off</p>
+                                                <div class="top-text-1">Buy More & Save More</div>
+                                                <span>Fresh Vegetables</span>
+                                            </div>
+                                            <a href="#ss" class="Offer-shop-btn hover-btn">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="offer-item">
+                                        <div class="offer-item-img">
+                                            <div class="gambo-overlay"></div>
+                                            <img  src={House1} style={{width:'230px'}}  alt="Second slide"/>
+                                        </div>
+                                        <div class="offer-text-dt">
+                                            <div class="offer-top-text-banner">
+                                                <p>5% Off</p>
+                                                <div class="top-text-1">Buy More & Save More</div>
+                                                <span>Fresh Fruits</span>
+                                            </div>
+                                            <a href="#ss" class="Offer-shop-btn hover-btn">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="offer-item">
+                                        <div class="offer-item-img">
+                                            <div class="gambo-overlay"></div>
+                                            <img  src={House1} style={{width:'230px'}}  alt="Second slide"/>
+                                        </div>
+                                        <div class="offer-text-dt">
+                                            <div class="offer-top-text-banner">
+                                                <p>3% Off</p>
+                                                <div class="top-text-1">Hot Deals on New Items</div>
+                                                <span>Daily Essentials Eggs & Dairy</span>
+                                            </div>
+                                            <a href="#ss" class="Offer-shop-btn hover-btn">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="offer-item">
+                                        <div class="offer-item-img">
+                                            <div class="gambo-overlay"></div>
+                                            <img  src={House1} style={{width:'230px'}}  alt="Second slide"/>
+                                        </div>
+                                        <div class="offer-text-dt">
+                                            <div class="offer-top-text-banner">
+                                                <p>2% Off</p>
+                                                <div class="top-text-1">Buy More & Save More</div>
+                                                <span>Beverages</span>
+                                            </div>
+                                            <a href="#ss" class="Offer-shop-btn hover-btn">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="offer-item">
+                                        <div class="offer-item-img">
+                                            <div class="gambo-overlay"></div>
+                                            <img  src={House1} style={{width:'230px'}}  alt="Second slide"/>
+                                        </div>
+                                        <div class="offer-text-dt">
+                                            <div class="offer-top-text-banner">
+                                                <p>3% Off</p>
+                                                <div class="top-text-1">Buy More & Save More</div>
+                                                <span>Nuts & Snacks</span>
+                                            </div>
+                                            <a href="#ss" class="Offer-shop-btn hover-btn">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+               </Col>
+           </Row>
       <Footer />
     </div>
     ;

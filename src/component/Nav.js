@@ -27,16 +27,13 @@ return (
         <NavDropdown.Item ><Switch><Link className="dropdowns" to="/flat">Flat</Link></Switch></NavDropdown.Item>
         <NavDropdown.Item ><Switch><Link className="dropdowns" to="/land">Land</Link></Switch></NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Others</NavDropdown.Item>
+        <NavDropdown.Item><Switch><Link className="dropdowns" to="/agents">Agents</Link></Switch></NavDropdown.Item>
       </NavDropdown>
       <Nav.Link><Switch><Link className="link" to="/news">News</Link></Switch></Nav.Link>
       <Nav.Link><Switch><Link className="link" to="/contact">Contact</Link></Switch></Nav.Link>
     </Nav>
     <Nav>
      <Nav.Link><Switch><Link className="link" to="/blog">Blog</Link></Switch></Nav.Link>
-      <Nav.Link eventKey={2} className="link" href="#memes">
-        Agents
-      </Nav.Link>
     </Nav>
     <Form className="d-flex">
       <FormControl

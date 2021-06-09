@@ -18,6 +18,7 @@ import Apartment from './component/Apartment';
 import Plots from './component/Plots';
 import Flat from './component/Flat';
 import Land from './component/Land';
+import Agent from './component/Agent';
 import Blog from './component/Blog';
 function App() {
 return (
@@ -40,6 +41,7 @@ return (
             <Route path="/plots"><Plots /></Route>
             <Route path="/flat"><Flat /></Route>
             <Route path="/land"><Land /></Route>
+            <Route path="/agents"><Agent /></Route>
             <Route path="/blog"><Blog /></Route>
           </Router>
 </div>
