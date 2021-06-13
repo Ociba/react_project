@@ -12,6 +12,10 @@ import { faCoffee ,faHome, faUser,faEnvelope} from '@fortawesome/free-solid-svg-
 //import image from './james.jpg';
 import Carousels from './Carousel';
 import MoreDetails from './MoreDetails';
+import {Carousel} from 'react-bootstrap';
+import Slide1 from './apart.jpeg';
+import Slide2 from './apart2.jpeg';
+import Slide3 from './apart5.jpeg';
 
 const TopContainer = styled.div`
 background-image : url(${backgroundIm});
@@ -156,92 +160,45 @@ function Home() {
                 </Col>
            </Row>
            <Row xs="12" sm="12" md="12" lg="12">
-               <Col>
-               <div class="main-banner-slider">
-               <div class="owl-carousel offers-banner owl-theme">
-                                <div class="item">
-                                    <div class="offer-item">
-                                        <div class="offer-item-img">
-                                            <div class="gambo-overlay"></div>
-                                            <img  src={House1} style={{width:'230px'}}  alt="Second slide"/>
-                                        </div>
-                                        <div class="offer-text-dt">
-                                            <div class="offer-top-text-banner">
-                                                <p>6% Off</p>
-                                                <div class="top-text-1">Buy More & Save More</div>
-                                                <span>Fresh Vegetables</span>
-                                            </div>
-                                            <a href="#ss" class="Offer-shop-btn hover-btn">Shop Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="offer-item">
-                                        <div class="offer-item-img">
-                                            <div class="gambo-overlay"></div>
-                                            <img  src={House1} style={{width:'230px'}}  alt="Second slide"/>
-                                        </div>
-                                        <div class="offer-text-dt">
-                                            <div class="offer-top-text-banner">
-                                                <p>5% Off</p>
-                                                <div class="top-text-1">Buy More & Save More</div>
-                                                <span>Fresh Fruits</span>
-                                            </div>
-                                            <a href="#ss" class="Offer-shop-btn hover-btn">Shop Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="offer-item">
-                                        <div class="offer-item-img">
-                                            <div class="gambo-overlay"></div>
-                                            <img  src={House1} style={{width:'230px'}}  alt="Second slide"/>
-                                        </div>
-                                        <div class="offer-text-dt">
-                                            <div class="offer-top-text-banner">
-                                                <p>3% Off</p>
-                                                <div class="top-text-1">Hot Deals on New Items</div>
-                                                <span>Daily Essentials Eggs & Dairy</span>
-                                            </div>
-                                            <a href="#ss" class="Offer-shop-btn hover-btn">Shop Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="offer-item">
-                                        <div class="offer-item-img">
-                                            <div class="gambo-overlay"></div>
-                                            <img  src={House1} style={{width:'230px'}}  alt="Second slide"/>
-                                        </div>
-                                        <div class="offer-text-dt">
-                                            <div class="offer-top-text-banner">
-                                                <p>2% Off</p>
-                                                <div class="top-text-1">Buy More & Save More</div>
-                                                <span>Beverages</span>
-                                            </div>
-                                            <a href="#ss" class="Offer-shop-btn hover-btn">Shop Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="offer-item">
-                                        <div class="offer-item-img">
-                                            <div class="gambo-overlay"></div>
-                                            <img  src={House1} style={{width:'230px'}}  alt="Second slide"/>
-                                        </div>
-                                        <div class="offer-text-dt">
-                                            <div class="offer-top-text-banner">
-                                                <p>3% Off</p>
-                                                <div class="top-text-1">Buy More & Save More</div>
-                                                <span>Nuts & Snacks</span>
-                                            </div>
-                                            <a href="#ss" class="Offer-shop-btn hover-btn">Shop Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-               </Col>
+           <Carousel>
+                <Carousel.Item interval={1000}>
+                    <img
+                    className="d-block w-100"
+                    src={Slide1}
+                    alt="First slide"
+                    height="400"
+                    background="rgba((0,0,255, 0.25)"
+                    />
+                    <Carousel.Caption>
+                    <h3 style={{color:'blue'}}>First slide label</h3>
+                    <p style={{color:'blue'}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item interval={1000}>
+                    <img
+                    className="d-block w-100"
+                    src={Slide2}
+                    alt="Second slide"
+                    height="400"
+                    />
+                    <Carousel.Caption>
+                    <h3 style={{color:'blue'}}>Second slide label</h3>
+                    <p style={{color:'blue'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item interval={1000}>
+                    <img
+                    className="d-block w-100"
+                    src={Slide3}
+                    alt="Third slide"
+                    height="400"
+                    />
+                    <Carousel.Caption>
+                    <h3 style={{color:'blue'}}>Third slide label</h3>
+                    <p style={{color:'blue'}}>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
            </Row>
       <Footer />
     </div>

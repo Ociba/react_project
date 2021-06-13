@@ -20,6 +20,7 @@ import Flat from './component/Flat';
 import Land from './component/Land';
 import Agent from './component/Agent';
 import Blog from './component/Blog';
+import Demo from './component/Demo';
 function App() {
 return (
   
@@ -43,6 +44,7 @@ return (
             <Route path="/land"><Land /></Route>
             <Route path="/agents"><Agent /></Route>
             <Route path="/blog"><Blog /></Route>
+            <Route path="/demo"><Demo /></Route>
           </Router>
 </div>
 

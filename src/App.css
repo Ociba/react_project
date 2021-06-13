@@ -2,19 +2,16 @@
 .App {
   text-align: center;
 }
+.demo{
+  text-align:center;
+  color:chartreuse;
+  margin-top: 10%;
+}
 .body {
   width: 100%;
   overflow: hidden;
-  margin-top: 60px;
-  font-family: 'Open Sans', sans-serif; 
-  -webkit-font-smoothing: antialiased; 
-  font-size:16px; 
-  color:#626262; 
-  letter-spacing: 0.02em; 
-  background:#f1f2f3;
-  margin-bottom: 70px;
-  text-align: justify;
 }
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -53,37 +50,6 @@
     transform: rotate(360deg);
   }
 }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #4CAF50;
-}
-h1 {
-  color:#fff;
-}
 .links {
  color:white;
 }
@@ -101,29 +67,13 @@ h1 {
 .image {
   border-radius: 50%;
 }
-.link{
-  padding:0;
-  text-decoration: none;
-  color:lightgray;
-}
 .margin-bottom {
   margin-bottom: 50%;
 }
 .carousel{
   color:#000062;
 }
-.dropdowns {
-  color:black;
-  text-decoration: none;
-  text-align: center;
-}
 p span {
-  text-decoration: none;
-}
-p Link {
-  text-decoration: none;
-}
-Link {
   text-decoration: none;
 }
 .bg-section {
@@ -335,7 +285,23 @@ p h3 {
 .panel-default:first-child{
   border-top:0
 }
-.main-banner-slider{margin-top:30px}.offers-banner .owl-stage-outer{overflow:visible!important}
+.second-row-item ul li{
+  text-decoration: none;
+  list-style-type: none;
+  color:normal;
+}
+.second-row-item ul li a{
+   text-decoration: none;
+   color: #3e3f5e;
+}
+.dropdowns{
+  text-decoration: none;
+  color: #3e3f5e;
+}
+.financial-institutes__logo{
+  text-decoration: none;
+  list-style-type: none;
+}
 .panel-body{
   font-size:14px;
   font-weight:400;
@@ -473,5 +439,78 @@ p h3 {
 .about-step-img {
   color:#009933;
   font-size: 36px;
+}
+.testimonials .testimonial-item {
+  box-sizing: content-box;
+  min-height: 320px;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 50%;
+  margin: -40px 0 0 40px;
+  position: relative;
+  z-index: 2;
+  border: 6px solid rgba(255, 255, 255, 0.2);
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 45px;
+  color: white;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 0 45px;
+}
+
+.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+  color: #d3af71;
+  font-size: 26px;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 0 15px 0 15px;
+  padding: 20px 20px 60px 20px;
+  position: relative;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonials .swiper-pagination {
+  margin-top: 30px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #cda45e;
+}
+.section-bg {
+  background-color: #1a1814;
 }
 
