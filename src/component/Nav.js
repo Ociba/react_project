@@ -81,6 +81,7 @@ return (
                                       <NavDropdown.Divider />
                                       <NavDropdown.Item><Switch><Link className="dropdowns" to="/agents">Agents</Link></Switch></NavDropdown.Item>
                                       <NavDropdown.Item><Switch><Link className="dropdowns" to="/demo">Demo</Link></Switch></NavDropdown.Item>
+                                      <NavDropdown.Item><Switch><Link className="dropdowns" to="/sample">Sample</Link></Switch></NavDropdown.Item>
                                   </NavDropdown>
                                     <li class="nav-item"><Switch><Link to="/login" class="nav-link" title="Login">Login</Link></Switch></li>
                                     <li class="nav-item"><Switch><Link to="/register" class="nav-link" title="Register">Register</Link></Switch></li>

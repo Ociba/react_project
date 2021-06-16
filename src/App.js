@@ -21,6 +21,9 @@ import Land from './component/Land';
 import Agent from './component/Agent';
 import Blog from './component/Blog';
 import Demo from './component/Demo';
+import SampleList from './component/SampleList';
+import SampleCreate from './component/SampleCreate';
+import SampleEdit from './component/SampleEdit';
 function App() {
 return (
   
@@ -45,6 +48,9 @@ return (
             <Route path="/agents"><Agent /></Route>
             <Route path="/blog"><Blog /></Route>
             <Route path="/demo"><Demo /></Route>
+            <Route path="/sample"><SampleList /></Route>
+            <Route path="/create"><SampleCreate /></Route>
+            <Route path="/editSample"><SampleEdit /></Route>
           </Router>
 </div>
 
